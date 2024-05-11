@@ -1,0 +1,44 @@
+directions:
+    directed:
+        e_gsk_holder: 0
+        e_legal_inn_affilated_legal: 1
+        e_legal_inn_owns_legal: 2
+        e_legal_inn_transaction: 3
+        e_gsk_firm_holder_test: 4
+        e_legal_inn_demo_transactions: 5
+    undirected:
+        e_gsk_holder_leader_test: 6
+        e_legal_inn_same_leader: 7
+        e_legal_inn_same_owner: 8
+        e_legal_legal_miismi: 9
+        e_legal_same_leader: 10
+        e_legal_same_owner: 11
+constants:
+    max_date: 2021-12-31
+    max_company_age: 20
+    fill_value:
+        int: 0
+        object: unknown
+        float: 0.0
+financial:
+    [1100, 1130, 1150, 1160, 1170, 1190, 1200, 1210,
+    1220, 1230, 1250, 1300, 1350, 1360, 1370, 1400,
+    1410, 1450, 1500, 1510, 1520, 1530, 1600, 1700,
+    2100, 2110, 2120, 2200, 2210, 2220, 2300 ,2320,
+    2330, 2340, 2350, 2400, 2410]
+paths:
+    fin_data: "./data/additional/fin_arango_gsk.csv"
+    bankrupt_data: './data/additional/bankrupt_arango_gsk.csv'
+    gc_data: "./data/ГСК_v3'
+    gc_augmented_save: './data/ГСК_v3_augmented/pickle'
+    okved_doc: "./data/additional/Документ предоставлен КонсультантПлюс. docx'
+    okved data save: './data/additional/okved data.csv'
+    gc_augmented_node_features: './data/ГСК_v3_augmented/node_features_with_gc.csv'
+    gc_augmented_edge_features: "./data/ГСК_v3_augmented/edge_features.csv'
+    okved_graph: './data/additional/okved_graph.pickle'
+    okved_embeddings_model: './models/checkpoints/okved_embedding_model.pth'
+    okved_embeddings: './data/embeddings/okved_embeddings.pickle'
+    company_okved_dict: './data/additional/company_okved_dict.pickle'
+    profits_dataset: './data/additional/profits_dataset.csv'
+    inout_dataset: './data/additional/company_inout_graphs.pickle'
+    company_embeddings_model: './models/checkpoints/company_embedding_model.pth'
